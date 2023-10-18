@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: spi-oauth-redirect-proxy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-qe-shared-tenant/spi-oauth-redirect-proxy/spi-oauth-redirect-proxy@sha256:5989113f6ff4718cad46134e46c32c526ab80fef5e9bff0c3421633fe1867c8b
+        name: container-image
+        resources: {}
+status: {}
